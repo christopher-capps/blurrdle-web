@@ -1,6 +1,6 @@
 # Blurrdle : A High-Difficulty Wordle Variant
 
-Note: This is the web app code. To actually play Blurrdle, you'll want to try the actual web app at [Blurrdle.com](https://blurrdle.com), or download and run the [Java CLI client.](https://github.com/christopher-capps/blurrdle-client)
+Note: This is the web app code. To actually play Blurrdle, you'll want to try the actual web app at [Blurrdle.com](http://blurrdle.com), or download and run the [Java CLI client.](https://github.com/christopher-capps/blurrdle-client)
 
 Blurrdle is a project that I've built to have a little fun and to practice creating a Spring Boot RESTful API.
 
