@@ -1,0 +1,25 @@
+{
+    "guess":" ",
+    "columns":[
+        {
+            "possibleLetters":[]
+        },
+        {
+            "possibleLetters":[]
+        },
+        {
+            "possibleLetters":[]
+        },
+        {
+            "possibleLetters":[]
+        },
+        {
+            "possibleLetters":[]
+        },
+        {
+            "possibleLetters":[]
+        }
+        ],
+    "guessHistory":[],
+    "correct":false
+}

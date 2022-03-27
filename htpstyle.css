@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(214, 236, 245);
+    font-family: 'Azeret Mono', monospace;
+    display: grid;
+    grid-template-columns: 1;
+}
+
+header{
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+#main-container {
+    display: grid;
+    grid-template-columns: 1;
+    align-items: center;
+    justify-items: center;
+}
+
+#main-container > p {
+    width: 300px;
+}
+
+table, th, td {
+    text-align: center;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.hits {
+    border-color: red;
+    color: red;
+}
+
+.guess {
+    border-color: blue;
+    color: blue;
+}
+
