@@ -162,11 +162,11 @@ function displayTracker(theTracker) {
         }
 
         let congratsFull = congrats + theTracker.guessHistory[theTracker.guessHistory.length - 1] + ' IN ONLY ' + theTracker.guessHistory.length + ' GUESS';
-        if (theTracker.guessHistory.length > 1) {
-            congratsFull + 'es';
+        if (theTracker.guessHistory.length - 1 > 0) {
+            congratsFull += 'ES';
         }
 
-        congratsFull + '!'
+        congratsFull += '!'
 
         let congratsMessageElement = document.createElement('p');
         congratsMessageElement.innerText = congratsFull;
