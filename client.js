@@ -197,6 +197,24 @@ function startGame() {
     fetch(url).then(processResponse).then(mapResponse).then(displayTracker);
 }
 
+function keyPress(e) {
+    let keyPressed = String(e.key).toUpperCase();
+    if (keyPressed === 'BACKSPACE') {
+        clickBackspace();
+    } else if (keyPressed === 'ENTER') {
+        sendGuess();
+    } else if (keyPressed.match(/[a-z]/gi)) {
+        if (lettersGuessed <= theTracker.columns.length) {
+            const slotId = 'slot' + lettersGuessed;
+            const guessSlot = document.getElementById(slotId);
+            guessSlot.innerText = keyPressed
+            guessSlot.classList.add('filled-guess');
+            currentGuess += keyPressed;
+            lettersGuessed += 1;
+        }
+    }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     startGame();
 
@@ -210,4 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const enterButtonElement = document.getElementById('enter-btn');
     enterButtonElement.addEventListener('click', sendGuess);
+
+    document.addEventListener('keyup', (e) => {
+        keyPress(e);
+    });
 })
